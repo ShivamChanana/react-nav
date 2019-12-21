@@ -18,11 +18,11 @@ export default class Home extends React.Component{
     handleSubmit=(e)=>{
         e.preventDefault()
         console.log("inside props", this.props)
-        if (this.state.email === "shivam" && this.state.password ==="123456"){
+
             this.props.handleAuth()
             // this.props.history.push("/dashboard")
             this.redirectHandler()
-    }
+    
 }
 redirectHandler = ()=>{
     this.setState({
